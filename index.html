@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>McDatascript</title>
-        <style>
-            header{
-                background-image: url(logo.png);
-                width: 100%;
-                height: 500px;
-                background-repeat: no-repeat;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            ye
-        </header>
-    </body>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css"/>
+    <title>McDatascript</title>
+</head>
+<body>
+    <script>
+    $('body').terminal({
+        hello: function(what) {
+            this.echo('Hello, ' + what +
+                      '. Wellcome to this terminal.');
+        }
+    }, {
+        greetings: 'My First Web Terminal'
+    });
+    </script>
+</body>
 </html>
